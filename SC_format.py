@@ -39,11 +39,11 @@ C_Sharp = "0" + ",0".join(shell_coded.split("\\")[1:])
 
 encode = base64.b64encode(C_Sharp.encode())
 
-with open('All_TYEPES_SHELLCODES.txt', 'w') as format_out:
-    format_out.write("\n\nC shellcode format:\n\n")
-    format_out.write(shell_coded)
-    format_out.write("\n\nC# format shellcode:\n\n")
-    format_out.write(C_Sharp)
-    format_out.write("\n\nBase64 Encoded shellcode:\n\n")
-    format_out.write(encode.decode('ascii'))
-    format_out.write("\n")
+with open('All_TYEPES_SHELLCODES.txt', 'w') as out:
+    out.write("\n\nC shellcode format:\n\n")
+    out.write(shell_coded)
+    out.write("\n\nC# format shellcode:\n\n")
+    out.write(C_Sharp)
+    out.write("\n\nBase64 Encoded shellcode:\n\n")
+    out.write(encode.decode('ascii'))
+    out.write("\n")
